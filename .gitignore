@@ -1,0 +1,24 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+.aider*
+
+# Rust build artifacts
+lambda/target/
+**/target/
+lambda/Cargo.lock
+
+# Generated Lambda artifacts
+bootstrap
+*.zip
+lambda.zip
+
+# Rust development
+**/*.rs.bk
+*.pdb
+.cargo/credentials
